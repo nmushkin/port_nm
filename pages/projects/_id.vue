@@ -1,13 +1,9 @@
 <template>
-  <div class="background">
-    <div class="container">
-      <div class="blog_body">
-        <!-- <logo /> -->
-        <span class="title-dark" v-html="post.title"></span>
-        <img class="cover-image" :src="post.cover_img" />
-        <div class="blog_content" v-html="post.entry_body"></div>
-      </div>
-    </div>
+  <div class="blog_body">
+    <!-- <logo /> -->
+    <img class="cover-image" :src="post.cover_img" />
+    <span class="title-dark" v-html="post.title"></span>
+    <div class="blog_content" v-html="post.entry_body"></div>
   </div>
 </template>
 
@@ -47,33 +43,31 @@ export default {
 </script>
 
 <style scoped>
-.container {
-  margin: 0 auto;
-  display: block;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 .cover-image {
   width: 100%;
-  max-height: 600px;
+  max-height: 400px;
   object-fit: cover;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  border-radius: 4px;
+  border-bottom: 1px solid #000000;
 }
 .links {
   padding-top: 15px;
 }
+.title-dark {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .blog_body {
   padding-bottom: 5vh;
-  padding-top: 5vh;
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 .blog_content {
   text-align: left;
-  max-width: 100%;
-  overflow: hidden;
+  max-width: 800px;
   font-size: 18px;
 }
 .blog_content >>> img {
