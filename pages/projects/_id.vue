@@ -69,6 +69,7 @@ export default {
   text-align: left;
   max-width: 800px;
   font-size: 18px;
+  width: 95%;
 }
 .blog_content >>> img {
   width: 100%;
