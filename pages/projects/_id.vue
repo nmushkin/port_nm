@@ -77,4 +77,11 @@ export default {
   object-fit: cover;
   text-align: center;
 }
+
+pre {
+  color: #eeeeee;
+  background-color: #232323;
+  padding: 10px;
+  border-radius: 4px;
+}
 </style>
