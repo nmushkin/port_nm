@@ -78,7 +78,7 @@ export default {
   text-align: center;
 }
 
-pre {
+.blog_content >>> pre {
   color: #eeeeee;
   background-color: #232323;
   padding: 10px;
