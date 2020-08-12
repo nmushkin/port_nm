@@ -71,8 +71,14 @@ export default {
   font-size: 18px;
   width: 95%;
 }
+
+.blog_content >>> p.block-img {
+  text-align: center;
+}
+
 .blog_content >>> img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 400px;
   object-fit: cover;
   text-align: center;
 }

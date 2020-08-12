@@ -56,12 +56,12 @@ export default {
 }
 .post_thumb {
   padding: 10px;
-  height: 30vh;
+  min-height: 30vh;
   background-size: cover;
   background: no-repeat center;
   border-radius: 2px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,9 +71,10 @@ export default {
   width: 50%;
 }
 .post_thumb_in {
-  background-color: rgba(50, 50, 50, 0.9);
+  background-color: rgba(27, 27, 27, 0.9);
   padding: 10px;
   border-radius: 4px;
+  border: 1px solid #f2f2f2;
 }
 .post_thumb_in:hover {
   border: 2px solid #ffffff;
