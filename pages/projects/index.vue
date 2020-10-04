@@ -33,7 +33,9 @@ export default {
     const apiEndpoint = 'https://nmushkinblog.cdn.prismic.io/api/v2'
     const posts = []
     const api = await Prismic.getApi(apiEndpoint)
-    const response = await api.query('')
+    const response = await api.query('', {
+      orderings: '[document.first_publication_date desc]'
+    })
     let entry = 0
     for (entry in response.results) {
       const post = response.results[entry]
